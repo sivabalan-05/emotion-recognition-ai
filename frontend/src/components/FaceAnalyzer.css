@@ -1,0 +1,21 @@
+.mode-toggle { display: flex; gap: 4px; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 4px; margin-bottom: 1rem; width: fit-content; }
+.mode-toggle button { background: transparent; border: none; color: var(--muted); padding: 0.4rem 1rem; border-radius: 6px; font-size: 0.78rem; transition: all 0.2s; }
+.mode-toggle button.active { background: var(--accent); color: #000; font-weight: 700; }
+.webcam { width: 100%; border-radius: 12px; border: 1px solid var(--border); display: block; }
+.webcam-wrap { position: relative; }
+.cam-error { width: 100%; aspect-ratio: 4/3; background: var(--surface2); border: 1px dashed var(--border); border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; color: var(--muted); font-size: 0.85rem; text-align: center; }
+.cam-error span { font-size: 2rem; }
+.live-badge { position: absolute; top: 10px; left: 10px; background: rgba(255,50,50,0.9); color: white; font-size: 0.7rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; animation: blink 1s infinite; }
+@keyframes blink { 50%{opacity:0.5} }
+.btn-row { display: flex; gap: 0.5rem; margin-top: 0.75rem; }
+.btn-primary { flex: 1; background: var(--accent); color: #000; border: none; padding: 0.65rem; border-radius: 8px; font-size: 0.82rem; font-weight: 700; transition: all 0.2s; }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-secondary { background: var(--surface2); border: 1px solid var(--border); color: var(--text); padding: 0.65rem 1rem; border-radius: 8px; font-size: 0.8rem; transition: all 0.2s; }
+.btn-secondary.active { border-color: var(--accent2); color: var(--accent2); }
+.upload-label { cursor: pointer; display: block; }
+.upload-label input { display: none; }
+.upload-area { border: 2px dashed var(--border); border-radius: 12px; padding: 2rem; text-align: center; color: var(--muted); font-size: 0.82rem; min-height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; transition: all 0.2s; }
+.upload-area:hover { border-color: var(--accent); color: var(--text); }
+.upload-icon { font-size: 2rem; }
+.preview-img { max-width: 100%; max-height: 200px; border-radius: 8px; object-fit: contain; }
+.analyzing-text { text-align: center; color: var(--accent); font-size: 0.82rem; margin-top: 0.75rem; }

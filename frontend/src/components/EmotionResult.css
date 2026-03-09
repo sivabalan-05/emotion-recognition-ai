@@ -1,0 +1,19 @@
+.result-empty, .result-error { height: 100%; min-height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem; color: var(--muted); text-align: center; font-size: 0.82rem; }
+.empty-icon { font-size: 3rem; color: var(--border); margin-bottom: 0.5rem; }
+.scanner { width: 120px; height: 120px; border: 2px solid var(--border); border-radius: 12px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.scan-line { position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--accent); box-shadow: 0 0 10px var(--accent); animation: scan 1.5s ease-in-out infinite; }
+@keyframes scan { 0%{top:0} 100%{top:100%} }
+.scan-text { font-size: 0.7rem; color: var(--accent); z-index: 1; }
+.result-content { display: flex; flex-direction: column; gap: 1.2rem; }
+.dominant-card { background: color-mix(in srgb, var(--accent-color) 8%, var(--surface2)); border: 1px solid color-mix(in srgb, var(--accent-color) 30%, transparent); border-radius: 12px; padding: 1.2rem; text-align: center; }
+.dominant-emoji { font-size: 2.5rem; line-height: 1; margin-bottom: 0.3rem; }
+.dominant-label { font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; color: var(--accent-color); }
+.dominant-sub { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
+.bars-section { display: flex; flex-direction: column; gap: 0.45rem; }
+.bar-row { display: grid; grid-template-columns: 90px 1fr 48px; align-items: center; gap: 0.5rem; }
+.bar-label { font-size: 0.72rem; color: var(--muted); white-space: nowrap; }
+.bar-track { background: var(--surface2); border-radius: 4px; height: 8px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 4px; transition: width 0.8s cubic-bezier(0.16,1,0.3,1); }
+.bar-value { font-size: 0.7rem; color: var(--muted); text-align: right; }
+.section-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.5rem; }
+.analyzed-text p { font-size: 0.78rem; color: var(--muted); font-style: italic; background: var(--surface2); border-left: 3px solid var(--accent3); padding: 0.6rem 0.8rem; border-radius: 0 6px 6px 0; line-height: 1.5; }

@@ -1,0 +1,6 @@
+content = open('main.py').read()
+content = content.replace("round(item[\"score\"] * 100", "round(float(item[\"score\"]) * 100")
+content = content.replace("round(item['score'] * 100", "round(float(item['score']) * 100")
+open('main.py', 'w').write(content)
+print("Fixed! Contents:")
+print(open('main.py').read())

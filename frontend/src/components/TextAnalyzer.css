@@ -1,0 +1,13 @@
+.text-input { width: 100%; background: var(--surface2); border: 1px solid var(--border); color: var(--text); border-radius: 10px; padding: 0.9rem 1rem; font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.6; resize: vertical; outline: none; transition: border-color 0.2s; }
+.text-input:focus { border-color: var(--accent); }
+.text-input::placeholder { color: var(--muted); }
+.text-meta { display: flex; justify-content: space-between; margin: 0.4rem 0 0.8rem; font-size: 0.72rem; color: var(--muted); }
+.analyze-btn { width: 100%; background: linear-gradient(135deg, var(--accent), var(--accent3)); color: #000; border: none; padding: 0.75rem; border-radius: 10px; font-size: 0.88rem; font-weight: 700; transition: all 0.2s; margin-bottom: 1.5rem; }
+.analyze-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.loading-text { display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+.spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid rgba(0,0,0,0.3); border-top-color: #000; border-radius: 50%; animation: spin 0.7s linear infinite; }
+@keyframes spin { to{transform:rotate(360deg)} }
+.examples-label { font-size: 0.72rem; color: var(--muted); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.examples-list { display: flex; flex-direction: column; gap: 0.4rem; }
+.example-chip { background: var(--surface2); border: 1px solid var(--border); color: var(--muted); padding: 0.45rem 0.75rem; border-radius: 6px; font-size: 0.75rem; text-align: left; transition: all 0.15s; font-family: var(--font-mono); }
+.example-chip:hover { border-color: var(--accent3); color: var(--text); }
