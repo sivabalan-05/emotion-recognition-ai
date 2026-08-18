@@ -191,3 +191,9 @@ git push
 MIT License — free to use and modify.
 
 ---
+
+
+## 🙏 Credits
+
+- [DeepFace](https://github.com/serengil/deepface) by Sefik Ilkin Serengil
+- [j-hartmann/emotion-english-distilroberta-base](https://huggingface.co/j-hartmann/emotion-english-distilroberta-base) on HuggingFace
