@@ -1,9 +1,54 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
 :root {
-  --bg: #080b14; --surface: #0e1420; --surface2: #141b2d; --border: #1e2d4a;
-  --accent: #00e5ff; --accent2: #ff6b6b; --accent3: #a78bfa;
-  --text: #e2e8f0; --muted: #64748b;
-  --font-display: 'Syne', sans-serif; --font-mono: 'Space Mono', monospace;
+  /* colors */
+  --bg: #0c0a10;
+  --surface: #16121c;
+  --surface2: #1f1928;
+  --border: #2e2438;
+  --accent: #ff9f5b;   /* warm amber */
+  --accent2: #ef476f;  /* coral pink */
+  --accent3: #7dd3c0;  /* seafoam */
+  --text: #f1ece4;
+  --muted: #8a8296;
+
+  /* typography */
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  /* spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+
+  /* layout */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --container-narrow: 640px;
+  --container: 1120px;
+  --container-wide: 1440px;
 }
-body { background: var(--bg); color: var(--text); font-family: var(--font-mono); min-height: 100vh; }
-button { cursor: pointer; font-family: var(--font-mono); }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-mono);
+  border-radius: var(--radius-sm);
+}
